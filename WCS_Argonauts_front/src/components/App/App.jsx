@@ -9,12 +9,15 @@ import Header from '../Header/Header';
 import NewMemberForm from '../NewMemberForm/NewMemberForm';
 import MemberList from '../MemberList/MemberList';
 import Footer from '../Footer/Footer';
+import Loader from '../Loader/Loader';
 
 // == Component
 const App = () => {
   const APIURL = 'https://wcs-argonauts-server-cd.herokuapp.com/argonaut';
   // Entry of the state containing the list of argonauts in db
   const [argonauts, setArgonauts] = useState([]);
+  // useful to display a loader while the results are on their way
+  const [isLoading, setLoading] = useState('true');
   // controlled field of name input
   const [nameInput, setNameInput] = useState('');
 
@@ -24,6 +27,7 @@ const App = () => {
       .then((res) => {
         // We set the value of the state entry with data returned
         setArgonauts(res.data);
+        setLoading(false);
       })
       .catch((err) => {
         console.error(err);
@@ -38,23 +42,23 @@ const App = () => {
   const addArgonaut = () => {
     axios.post(APIURL, { name: nameInput })
       .then(() => {
+        loadArgonauts();
       })
       .catch((err) => {
         console.error(err);
       });
   };
 
-  //
+  // When the form is submitted we add an argonaut to the db
   const handleSubmit = (event) => {
     event.preventDefault();
     addArgonaut();
   };
 
-  // Thanks to useEffect we execute loadArgonoats when the component mounts
-  // We then subscribe to argonauts value to update the list of argonauts displaid each time it changes
+  // Thanks to useEffect we execute loadArgonauts when the component mounts
   useEffect(() => {
     loadArgonauts();
-  }, [argonauts]);
+  }, []);
 
   return (
     <div className="app">
@@ -62,7 +66,8 @@ const App = () => {
       <main>
         {/* We pass the handling method to the concerned component */}
         <NewMemberForm handleNameInput={handleNameInput} handleSubmit={handleSubmit} />
-        <MemberList argonauts={argonauts} />
+        {isLoading && <Loader />}
+        {!isLoading && <MemberList argonauts={argonauts} />}
       </main>
       <Footer />
     </div>

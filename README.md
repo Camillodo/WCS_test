@@ -21,7 +21,7 @@ Une fois le repo cloné :
 
 Se placer dans le dossier WCS_Argonauts_server
 
-Installer les dépendances gràce à :
+Installer les dépendances :
 ```bash
 npm i
 ```
@@ -53,12 +53,13 @@ npm start
 ```
 
 Le serveur se lance sur le port 3000
+!!! important, pour lancer le serveur en local il faut désactiver le ssl (l10 / database.js)
 
 ### Front
 
 Se placer dans le dossier WCS_Argonauts_front
 
-Installer les dépendances gràce à :
+Installer les dépendances :
 ```bash
 yarn
 ```
@@ -76,4 +77,4 @@ L'application se lance sur le port 1234
 https://wcs-argonauts-server-cd.herokuapp.com/argonaut
 
 ### Front
-(ongoing)
+https://wcs-test-front.vercel.app/
