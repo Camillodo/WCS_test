@@ -1,0 +1,11 @@
+
+.member-list{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.member-item {
+  text-align: center;
+  padding: .5em .25em;
+  width: 33%;
+}

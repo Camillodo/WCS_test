@@ -4,10 +4,11 @@
 
 ### GET /argonaut
 GET http://localhost:3000/argonaut
-
+//https://wcs-argonauts-server-cd.herokuapp.com/argonaut
 ### POST /argonaut
 
 POST http://localhost:3000/argonaut
+//https://wcs-argonauts-server-cd.herokuapp.com/argonaut
 Content-Type: application/json
 
 {
