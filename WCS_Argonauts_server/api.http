@@ -1,0 +1,15 @@
+// testing file 
+// download extension REST client
+
+
+### GET /argonaut
+GET http://localhost:3000/argonaut
+
+### POST /argonaut
+
+POST http://localhost:3000/argonaut
+Content-Type: application/json
+
+{
+    "name": "Jason"
+}
