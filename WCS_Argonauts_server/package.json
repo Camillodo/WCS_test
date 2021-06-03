@@ -4,7 +4,7 @@
   "description": "NPM run start",
   "main": "index.js",
   "scripts": {
-    "start": "npm i",
+    "start": "node index.js",
     "dev": "nodemon index.js"
   },
   "author": "",
