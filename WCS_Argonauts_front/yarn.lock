@@ -2941,11 +2941,6 @@ delayed-stream@~1.0.0:
   resolved "https://registry.npmjs.org/delayed-stream/-/delayed-stream-1.0.0.tgz"
   integrity sha1-3zrhmayt+31ECqrgsp4icrJOxhk=
 
-denque@^1.5.0:
-  version "1.5.0"
-  resolved "https://registry.npmjs.org/denque/-/denque-1.5.0.tgz"
-  integrity sha512-CYiCSgIF1p6EUByQPlGkKnP1M9g0ZV3qMIrqMqZqdwazygIA/YP2vrbcyl1h/WppKJTdl1F85cXIle+394iDAQ==
-
 depd@~1.1.2:
   version "1.1.2"
   resolved "https://registry.npmjs.org/depd/-/depd-1.1.2.tgz"
@@ -6296,11 +6291,6 @@ react-dom@^17.0.2:
     object-assign "^4.1.1"
     scheduler "^0.20.2"
 
-react-hook-form@^7.7.1:
-  version "7.7.1"
-  resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-7.7.1.tgz#b0dc20c7122a8b647cad9adf0db8ee4ffb1d11e2"
-  integrity sha512-qpiMf670nrbgngH11qmpKTKa/ulTt+5JXNL7lBnF3C3jwusrw17dyyZ9J92mHFAflxwYWndKECPM85DLEnIf0A==
-
 react-is@^16.8.1:
   version "16.13.1"
   resolved "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
@@ -6373,40 +6363,6 @@ readdirp@~3.5.0:
   integrity sha512-cMhu7c/8rdhkHXWsY+osBhfSy0JikwpHK/5+imo+LpeasTF8ouErHrlYkwT0++njiyuDvc7OFY5T3ukvZ8qmFQ==
   dependencies:
     picomatch "^2.2.1"
-
-redis-commands@^1.7.0:
-  version "1.7.0"
-  resolved "https://registry.npmjs.org/redis-commands/-/redis-commands-1.7.0.tgz"
-  integrity sha512-nJWqw3bTFy21hX/CPKHth6sfhZbdiHP6bTawSgQBlKOVRG7EZkfHbbHwQJnrE4vsQf0CMNE+3gJ4Fmm16vdVlQ==
-
-redis-errors@^1.0.0, redis-errors@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.npmjs.org/redis-errors/-/redis-errors-1.2.0.tgz"
-  integrity sha1-62LSrbFeTq9GEMBK/hUpOEJQq60=
-
-redis-parser@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.npmjs.org/redis-parser/-/redis-parser-3.0.0.tgz"
-  integrity sha1-tm2CjNyv5rS4pCin3vTGvKwxyLQ=
-  dependencies:
-    redis-errors "^1.0.0"
-
-redis-url@~0.2.0:
-  version "0.2.0"
-  resolved "https://registry.npmjs.org/redis-url/-/redis-url-0.2.0.tgz"
-  integrity sha1-G3otrMw+qCZLH7ZWwNkB2cqcVHA=
-  dependencies:
-    redis ">= 0.0.1"
-
-"redis@>= 0.0.1":
-  version "3.1.2"
-  resolved "https://registry.npmjs.org/redis/-/redis-3.1.2.tgz"
-  integrity sha512-grn5KoZLr/qrRQVwoSkmzdbw6pwF+/rwODtrOr6vuBRiR/f3rjSTGupbF90Zpqm2oenix8Do6RV7pYEkGwlKkw==
-  dependencies:
-    denque "^1.5.0"
-    redis-commands "^1.7.0"
-    redis-errors "^1.2.0"
-    redis-parser "^3.0.0"
 
 regenerate-unicode-properties@^8.2.0:
   version "8.2.0"
@@ -6980,15 +6936,6 @@ sprintf-js@~1.0.2:
   resolved "https://registry.npmjs.org/sprintf-js/-/sprintf-js-1.0.3.tgz"
   integrity sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw=
 
-src@^1.1.2:
-  version "1.1.2"
-  resolved "https://registry.npmjs.org/src/-/src-1.1.2.tgz"
-  integrity sha1-eKvdHAjKyibMbPRb1YC1bZOs+38=
-  dependencies:
-    redis-url "~0.2.0"
-    underscore "~1.6.0"
-    uuid "~1.4.1"
-
 srcset@^3.0.0:
   version "3.0.1"
   resolved "https://registry.npmjs.org/srcset/-/srcset-3.0.1.tgz"
@@ -7461,11 +7408,6 @@ uncss@^0.17.3:
     postcss-selector-parser "6.0.2"
     request "^2.88.0"
 
-underscore@~1.6.0:
-  version "1.6.0"
-  resolved "https://registry.npmjs.org/underscore/-/underscore-1.6.0.tgz"
-  integrity sha1-izixDKze9jM3uLJOT/htRa6lKag=
-
 unicode-canonical-property-names-ecmascript@^1.0.4:
   version "1.0.4"
   resolved "https://registry.npmjs.org/unicode-canonical-property-names-ecmascript/-/unicode-canonical-property-names-ecmascript-1.0.4.tgz"
@@ -7615,11 +7557,6 @@ uuid@^3.3.2:
   version "3.4.0"
   resolved "https://registry.npmjs.org/uuid/-/uuid-3.4.0.tgz"
   integrity sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==
-
-uuid@~1.4.1:
-  version "1.4.2"
-  resolved "https://registry.npmjs.org/uuid/-/uuid-1.4.2.tgz"
-  integrity sha1-RTAZ9oaWam34PNxSROfJkOzDMvw=
 
 v8-compile-cache@^2.0.0, v8-compile-cache@^2.0.3:
   version "2.3.0"

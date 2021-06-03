@@ -11,6 +11,7 @@ const MemberList = ({ argonauts }) => (
   <section>
     <h2>Membres de l&apos;équipage</h2>
     <section className="member-list">
+      {/* We use map to create a div with following name for each argonaut */}
       {argonauts.map((argonaut) => (
         <div className="member-item" key={argonaut.id}>{argonaut.name}</div>
       ))}
