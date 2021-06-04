@@ -8,12 +8,12 @@ import PropTypes from 'prop-types';
 import './style.scss';
 
 // == Component
-const NewMemberForm = ({ handleNameInput, handleSubmit }) => (
+const NewMemberForm = ({ handleNameInput, handleSubmit, nameInput }) => (
   <section>
     <h2>Ajouter un(e) Argonaute</h2>
     <form className="new-member-form" onSubmit={handleSubmit}>
       <label htmlFor="name">Nom de l&apos;Argonaute</label>
-      <input id="name" name="name" type="text" placeholder="Charalampos" onChange={handleNameInput} />
+      <input id="name" name="name" value={nameInput} type="text" placeholder="Charalampos" onChange={handleNameInput} />
       <button type="submit">Envoyer</button>
     </form>
   </section>
@@ -22,6 +22,7 @@ const NewMemberForm = ({ handleNameInput, handleSubmit }) => (
 NewMemberForm.propTypes = {
   handleNameInput: PropTypes.func.isRequired,
   handleSubmit: PropTypes.func.isRequired,
+  nameInput: PropTypes.string.isRequired,
 
 };
 // == Export
